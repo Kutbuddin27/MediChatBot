@@ -1,31 +1,30 @@
-version: "3.1"
-
+version: '3.1'
 intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - lab_tests
-  - test_type
-  - test_further_type
-  - language
-  - Appointment_booking
-  - visit_type
-
+- Appointment_booking
+- affirm
+- deny
+- goodbye
+- greet
+- lab_tests
+- language
+- provide_date
+- test_further_type
+- test_type
+- visit_type
 responses:
   utter_greet:
-  - text: "Hey! How are you? in which language would you like to have conversation?🤔"
+  - text: Hey! How are you? in which language would you like to have conversation?🤔
     buttons:
     - title: ENGLISH
       payload: english
     - title: HINDI
       payload: hindi
     - title: GUJARATI
-      payload: gujarati   
+      payload: gujarati
   utter_goodbye:
-  - text: "Bye"
-  utter_test_type: 
-  - text: ""
+  - text: Bye
+  utter_test_type:
+  - text: ''
     buttons:
     - title: 🩸Blood-Tests બ્લડટેસ્ટ ब्लड-टेस्ट
       payload: blood-test
@@ -33,18 +32,18 @@ responses:
       payload: urine-test
     - title: 📷Imaging-Tests ઇમેજિંગ-ટેસ્ટ इमेजिंग-परीक्षण
       payload: imaging-test
-  utter_hold_on:
-  - text: To be continued        
-
+  utter_display_calendar_message:
+  - text: Select the date for your appointment on the calendar which will be pop-up on your screen
 actions:
-- action_further_test_type
+- action_ask_visit
+- action_display_calendar_message
 - action_select_language
+- utter_greet
+- action_show_calendar
+- utter_display_calendar_message
+- action_further_test_type
 - action_test_type
 - action_display_card
-- action_ask_visit
-- utter_hold_on
-
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
-

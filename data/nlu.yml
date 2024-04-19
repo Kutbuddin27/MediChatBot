@@ -10,6 +10,7 @@ nlu:
     - good evening
     - hey there
     - good afternoon
+    - hii
 - intent: goodbye
   examples: |
     - cu
@@ -53,7 +54,6 @@ nlu:
     - aur test kya hai?
     - tests?
     - test?
-
 - intent: test_type
   examples: |
     - blood-test
@@ -67,15 +67,22 @@ nlu:
     - REA
     - mri
     - xray
-
 - intent: Appointment_booking
   examples: |
-    - Appointment booking 
+    - Appointment booking
     - Booking of appointment
     - अपॉइंटमेंट बुकिंग
     - એપોઇન્ટમેન્ટ બુકિંગ
-
 - intent: visit_type
   examples: |
     - homevisit
     - labvisit
+- intent: provide_date
+  examples: |
+    - 4/23/2024
+    - 11/24/2024
+    - 5/5/2024
+    - 4/30/2024
+    - 4/17/2024
+    - 6/28/2024
+    - 3/19/2024

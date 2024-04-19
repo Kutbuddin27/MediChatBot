@@ -25,4 +25,22 @@ stories:
   - intent: Appointment_booking
   - action: action_ask_visit
   - intent: visit_type
-  - action: utter_hold_on  
+  - action: action_display_calendar_message
+  - action: utter_display_calendar_message
+  - action: action_show_calendar
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: language
+  - action: action_select_language
+  - intent: Appointment_booking
+  - action: action_ask_visit
+  - intent: visit_type
+  - action: action_display_calendar_message
+  - action: utter_display_calendar_message
+  - action: action_show_calendar
+  - action: action_display_calendar_message
+  - action: utter_display_calendar_message
+  - action: action_show_calendar

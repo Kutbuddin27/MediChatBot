@@ -102,6 +102,29 @@ nlu:
     - [salim](Name)
     - [kutbuddin](Name)
     - [bhavik](Name)
+    - [Cadel](Name)
+    - [Daamin](Name)
+    - [Eaden](Name)
+    - [Fabron](Name)
+    - [Gaabriel](Name)
+    - [Harsh](Name)
+    - [Imli](Name)
+    - [Jack](Name)
+    - [Lad](Name)
+    - [Mahi](Name)
+    - [Nimay](Name)
+    - [Oak](Name)
+    - [Qatar](Name)
+    - [Rushi](Name)
+    - [Shivam](Name)
+    - [Tanmay](Name)
+    - [Urvish](Name)
+    - [vaishali](Name)
+    - [Wadley](Name)
+    - [Xaiver](Name)
+    - [Yaameen](Name)
+    - [Zach](Name)
+
 - intent: information_Number
   examples: |
     - [9856452052](PhoneNumber)
@@ -116,6 +139,13 @@ nlu:
 - intent: pwd
   examples: |
     - my password is abc@4563
+    - daamini@9xyz
+    - eagle!0
+    - fgj.123
+    - knq&
+    - rest*23
+    - uvw.zyz
+    - pal$5809*
     - chap#8374
     - www.6510
     - ac#123

@@ -174,7 +174,7 @@ class ActionShowSlots(Action):
         db = mc.connect(
             host="localhost",
             user="root",
-            password="Rasa#098",
+            password="",
             database="medichat"
         )
         cursor = db.cursor()
@@ -212,7 +212,7 @@ class ActionBookAppointment(Action):
         db = mc.connect(
             host="localhost",
             user="root",
-            password="Rasa#098",
+            password="",
             database="medichat"
         )
         cursor = db.cursor()
@@ -282,7 +282,7 @@ class ActionShowData(Action):
         db = mc.connect(
             host="localhost",
             user="root",
-            password="Rasa#098",
+            password="",
             database="medichat"
         )
         cursor = db.cursor()
@@ -356,7 +356,7 @@ class  ActionChangeTime(Action):
             db = mc.connect(
             host="localhost",
             user="root",
-            password="Rasa#098",
+            password="",
             database="medichat"
             )
             cursor = db.cursor()

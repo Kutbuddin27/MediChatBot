@@ -6,3 +6,8 @@ rules:
   steps:
   - intent: goodbye
   - action: utter_goodbye
+
+- rule: ask user to rephrasewhen they send a message with low confidence
+  steps:
+  - intent: nlu_fallback
+  - action: utter_please_rephrase

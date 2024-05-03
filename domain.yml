@@ -87,6 +87,9 @@ responses:
   utter_nlu_fallback:
   - text: I didn't understand that. Can you please rephrase or provide more information?
   - text: Sorry i didn't get it could you rephrase
+  utter_please_rephrase:
+  - text: I didn't understand that. Can you please rephrase or provide more information?
+  - text: Sorry i didn't get it could you rephrase
 actions:
 - action_add_upd_del
 - action_ask_time

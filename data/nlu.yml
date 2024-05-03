@@ -76,6 +76,8 @@ nlu:
   examples: |
     - homevisit
     - labvisit
+    - Lab Visit
+    - Home Visit
 - intent: date_query
   examples: |
     - 01-02-2023

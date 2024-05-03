@@ -1,0 +1,44 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-Address",
+      "2": "I-Address",
+      "3": "L-Address",
+      "4": "U-Address",
+      "5": "B-Name",
+      "6": "I-Name",
+      "7": "L-Name",
+      "8": "U-Name",
+      "9": "B-PhoneNumber",
+      "10": "I-PhoneNumber",
+      "11": "L-PhoneNumber",
+      "12": "U-PhoneNumber",
+      "13": "B-Time",
+      "14": "I-Time",
+      "15": "L-Time",
+      "16": "U-Time",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-Address": 1,
+      "I-Address": 2,
+      "L-Address": 3,
+      "U-Address": 4,
+      "B-Name": 5,
+      "I-Name": 6,
+      "L-Name": 7,
+      "U-Name": 8,
+      "B-PhoneNumber": 9,
+      "I-PhoneNumber": 10,
+      "L-PhoneNumber": 11,
+      "U-PhoneNumber": 12,
+      "B-Time": 13,
+      "I-Time": 14,
+      "L-Time": 15,
+      "U-Time": 16,
+      "O": 0
+    },
+    "num_tags": 17
+  }
+]

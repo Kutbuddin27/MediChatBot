@@ -22,6 +22,7 @@ class SelectLanguageText(Action):
         option_to_intent_mapping = {
             '🔬'+translator.translate("MedicalTests", dest=f'{language[0][:2]}').text: "lab_tests",
             '📅'+translator.translate("Book An Appointment", dest=f'{language[0][:2]}').text: "Appointment_booking",
+            '🔍'+translator.translate("FAQs", dest=f'{language[0][:2]}').text: "person_faq",
                         # Add more mappings as needed
         }
         # Generate buttons dynamically

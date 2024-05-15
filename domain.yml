@@ -24,6 +24,9 @@ intents:
 - testtype_change
 - t_f_t
 - provide_information
+- person_faq
+- information_feedbackcomplain
+- provide_feedback_complain
 
 entities:
 - Name
@@ -115,6 +118,9 @@ actions:
 - action_testtype_details_askchange
 - action_testtype_asktypechange
 - action_testinformation_change
+- action_complain_feedback
+- action_type_complain_feedback
+- action_submit_complain_feedback
 
 session_config:
   session_expiration_time: 60

@@ -225,3 +225,22 @@ nlu:
     - Daily
     - Weekly
     - Some precautinary treatment required
+
+- intent: person_faq
+  examples: |
+    - faq
+    - FAQ 
+
+- intent: information_feedbackcomplain
+  examples: |
+    - complain
+    - feedback
+
+- intent: provide_feedback_complain
+  examples: |
+    - "*"
+    - As someone deeply involved in the construction industry, I rely heavily on quality materials, and laboratory Industries consistently delivers beyond expectations.
+    - Each bar is meticulously crafted with precision and attention to detail, ensuring uniformity and durability. 
+    - Whether it's for structural support or intricate designs, Raj Steel Industries' bright bars are the cornerstone of reliability.
+    - Not only do they excel in product quality and customer service, but clinic Industries also demonstrates a strong commitment to sustainability.
+    - They've earned my trust and loyalty, and I wholeheartedly recommend them to anyone in need of superior iron products.

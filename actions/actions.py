@@ -13,6 +13,7 @@ import mysql.connector as mc
 from .Functions.translator import database_cred
 from .Functions.test_information import SelectLanguageText,ActionConvertText,ActionDisplayCard,language
 from .Functions.appointment import ActionAskVisit,ActionAskDate,ActionShowSlots,ActionBookAppointment
+from .Functions.FAQ import SelectComplainFeedback,SelectTypeComplainFeedback,ActionSubmitComplainFeedback
 
 translator = Translator()
 #####################################################Medical test information#####################################################################       

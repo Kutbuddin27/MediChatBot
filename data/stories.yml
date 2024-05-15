@@ -80,28 +80,12 @@ stories:
   - intent: time_query_second
   - action: action_change_time
 
-# - story: interactive_story_1
-#   steps:
-#   - intent: admin_info
-#   - action: utter_password
-#   - intent: pwd
-#   - action: action_check_password
-#   - action: action_check_password
-#   - slot_was_set:
-#     - is_authenticated: true
-#   - intent: visit_type
-#   - action: action_show_data
-#   - action: action_add_upd_del
-#   - intent: nlu_fallback
-#   - action: action_ask_time
-#   - intent: time_query_second
-#   - action: action_change_time
-#   - action: action_change_time
-#   - action: action_change_time
-#   - intent: greet
-#   - intent: admin_info
-#   - action: utter_password
-#   - intent: pwd
-#   - action: action_check_password
-#   - slot_was_set:
-#     - is_authenticated: false
+- story: Asking user if they have any further query(FAQ)
+  steps:
+  - intent: person_faq
+  - action: action_complain_feedback
+  - intent: information_feedbackcomplain
+  - action: action_type_complain_feedback
+  - intent: provide_feedback_complain
+  - action: action_submit_complain_feedback
+  

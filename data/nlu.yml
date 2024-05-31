@@ -10,6 +10,7 @@ nlu:
     - good evening
     - hey there
     - good afternoon
+    - hii
 - intent: goodbye
   examples: |
     - cu
@@ -58,7 +59,6 @@ nlu:
     - aur test kya hai?
     - change tests?
     - change test?
-
 - intent: test_type
   examples: |
     - blood-test
@@ -72,37 +72,23 @@ nlu:
     - REA
     - mri
     - xray
-- intent: t_f_t
-  examples: |
-    - CBC
-    - cbc
-    - rbc
-    - RE
-    - REA
-    - mri
-    - xray
-
 - intent: Appointment_booking
   examples: |
     - Appointment booking
     - Booking of appointment
     - अपॉइंटमेंट बुकिंग
     - એપોઇન્ટમેન્ટ બુકિંગ
-
 - intent: Appointment_booking1
   examples: |
     - Appointment booking change
-    - change Booking of appointment 
-
+    - change Booking of appointment
 - intent: testtype_change
   examples: |
     - a
     - b
     - c
     - a.
-    - c
     - f. g.
-    
 - intent: visit_type
   examples: |
     - homevisit
@@ -157,7 +143,6 @@ nlu:
     - [Xaiver](Name)
     - [Yaameen](Name)
     - [Zach](Name)
-
 - intent: information_Number
   examples: |
     - [9856452052](PhoneNumber)
@@ -193,7 +178,7 @@ nlu:
 - intent: information_address
   examples: |
     - My address is [123 Main Street, Cityville](Address)
-    - lab 
+    - lab
     - [lab](Address)
     - ['lab'](Address)
     - I live at [456 Park Avenue, Townsville](Address)
@@ -211,8 +196,7 @@ nlu:
     - [Unit No 13 Mahalaxmi Indl.estate, 2nd Flr D C Rd Gandhi Nagar, Delisle Road, Mumbai](Address)
     - [3rd Flr, Prabhat Apartments, Hanuman Road, Vile Parle(e), Mumbai](Address)
     - [201-210, 2nd Floor, Mittal Towers,c Wing, M G Road, Banglore](Address)
-    - [Jai Moti Building, Hirachand Desai Road, Opp. New Post Office, Ghatkopar (west)](Address)    
-
+    - [Jai Moti Building, Hirachand Desai Road, Opp. New Post Office, Ghatkopar (west)](Address)
 - intent: provide_information
   examples: |
     - *
@@ -225,22 +209,19 @@ nlu:
     - Daily
     - Weekly
     - Some precautinary treatment required
-
 - intent: person_faq
   examples: |
     - faq
-    - FAQ 
-
+    - FAQ
 - intent: information_feedbackcomplain
   examples: |
     - complain
     - feedback
-
 - intent: provide_feedback_complain
   examples: |
     - "*"
     - As someone deeply involved in the construction industry, I rely heavily on quality materials, and laboratory Industries consistently delivers beyond expectations.
-    - Each bar is meticulously crafted with precision and attention to detail, ensuring uniformity and durability. 
+    - Each bar is meticulously crafted with precision and attention to detail, ensuring uniformity and durability.
     - Whether it's for structural support or intricate designs, Raj Steel Industries' bright bars are the cornerstone of reliability.
     - Not only do they excel in product quality and customer service, but clinic Industries also demonstrates a strong commitment to sustainability.
     - They've earned my trust and loyalty, and I wholeheartedly recommend them to anyone in need of superior iron products.

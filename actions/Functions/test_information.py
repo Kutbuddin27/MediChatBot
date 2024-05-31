@@ -2,7 +2,7 @@ from typing import Any, Text, Dict, List
 from googletrans import Translator
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
-from .translator import response_further_test,test_descript,database_cred
+from .translator import test_descript
 
 language = []
 translator = Translator()
@@ -107,7 +107,7 @@ class ActionDisplayCard(Action):
         latest_message = tracker.latest_message
         text = latest_message.get('text', '')
         typ.append(text)
-        card = test_descript(typ[0],typ[1],response_further_test)
+        card = test_descript(typ[1])
         dispatcher.utter_message(translator.translate(card, dest=f'{language[0][:2]}').text,parse_mode="Markdown")
         language.clear()
         typ.clear()

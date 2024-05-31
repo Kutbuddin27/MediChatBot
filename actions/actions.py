@@ -330,5 +330,5 @@ class  ActionChangeTime(Action):
             dispatcher.utter_message(text=text,parse_mode="Markdown")  
             admin.clear()      
             return [SlotSet("is_authenticated", None)]
-    
+         
 #rasa run -m models --enable-api --cors "*" --debug  

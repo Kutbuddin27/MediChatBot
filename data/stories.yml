@@ -15,6 +15,7 @@ stories:
   - action: action_test_type
   - intent: test_type
   - action: action_further_test_type
+  - checkpoint: checkpoint_select_triggered
   - intent: test_further_type
   - action: action_display_card
 
@@ -58,7 +59,7 @@ stories:
   - intent: testtype_change
   - action: action_get_selected_test_details
   - checkpoint: checkpoint_admin_select_triggered
-  - intent: t_f_t
+  - intent: test_further_type
   - action: action_testtype_details_askchange
   - checkpoint: checkpoint_admin_ask_change_triggered
   - intent: testtype_change
@@ -89,3 +90,26 @@ stories:
   - intent: provide_feedback_complain
   - action: action_submit_complain_feedback
   
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: language
+  - action: action_select_language
+  - intent: lab_tests
+  - action: action_test_type
+  - intent: test_type
+  - action: action_further_test_type
+  - intent: test_further_type
+  - action: action_display_card
+  - intent: admin_info
+  - action: utter_password
+  - intent: pwd
+  - action: action_check_password
+  - intent: lab_tests1
+  - action: utter_ask_testtype_change
+  - intent: testtype_change
+  - action: action_get_selected_test_details
+  - intent: test_further_type
+  - action: action_testtype_details_askchange

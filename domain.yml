@@ -1,6 +1,7 @@
 version: '3.1'
 intents:
 - Appointment_booking
+- Appointment_booking1
 - add_upd_del
 - admin_info
 - affirm
@@ -11,23 +12,20 @@ intents:
 - information_Name
 - information_Number
 - information_address
+- information_feedbackcomplain
 - lab_tests
+- lab_tests1
 - language
+- person_faq
+- provide_feedback_complain
+- provide_information
 - pwd
 - test_further_type
 - test_type
+- testtype_change
 - time_query
 - time_query_second
 - visit_type
-- lab_tests1
-- Appointment_booking1
-- testtype_change
-- t_f_t
-- provide_information
-- person_faq
-- information_feedbackcomplain
-- provide_feedback_complain
-
 entities:
 - Name
 - PhoneNumber
@@ -58,7 +56,6 @@ slots:
     mappings:
     - type: from_entity
       entity: Time
-
 responses:
   utter_greet:
   - text: Hey! How are you? in which language would you like to have conversation?🤔
@@ -91,7 +88,7 @@ responses:
   utter_password:
   - text: Enter password
   utter_ask_testtype_change:
-  - text: "Choose one of the alphabet:<br> <b>a</b> Blood-test<br> <b>b</b> Urine-test<br> <b>c</b> Imaging-test "
+  - text: 'Choose one of the alphabet:<br> <b>a</b> Blood-test<br> <b>b</b> Urine-test<br> <b>c</b> Imaging-test '
   utter_nlu_fallback:
   - text: I didn't understand that. Can you please rephrase or provide more information?
   - text: Sorry i didn't get it could you rephrase
@@ -99,29 +96,30 @@ responses:
   - text: I didn't understand that. Can you please rephrase or provide more information?
   - text: Sorry i didn't get it could you rephrase
 actions:
-- action_add_upd_del
-- action_ask_time
-- utter_password
-- action_check_password
-- action_change_time
-- action_show_data
-- action_further_test_type
 - action_select_language
 - action_test_type
+- utter_greet
+- action_check_password
+- action_testtype_details_askchange
+- utter_ask_testtype_change
+- utter_password
+- action_get_selected_test_details
 - action_display_card
+- action_further_test_type
+- action_add_upd_del
+- action_ask_time
+- action_change_time
+- action_show_data
 - action_ask_visit
 - action_ask_date
 - action_show_slots
 - action_book_appointment
-- action_get_selected_test_details
 - action_booking_change
-- action_testtype_details_askchange
 - action_testtype_asktypechange
 - action_testinformation_change
 - action_complain_feedback
 - action_type_complain_feedback
 - action_submit_complain_feedback
-
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
